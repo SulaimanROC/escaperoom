@@ -1,0 +1,31 @@
+body {
+    background-image: url(pic.png);
+    background-size: cover;
+    height: 100vh;
+    background-position: center;
+    overflow: hidden;
+
+}
+
+article {
+    width: 350px;
+    height: 250px;
+    background-color: lightblue;
+    margin: auto;
+    margin-top: 350px;
+    text-align: center;
+    font-size: 50px;
+    text-shadow: 2px 0px 1px  rgb(1, 1, 2); 
+    border: 10px;
+    border-radius: 10px;
+    border-color: blue;
+    border-style: ridge;
+}
+
+img {
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    z-index: -1;
+    filter: linear-gradient(90deg, rgb(0, 0, 0), rgb(255, 0, 0)) 
+}

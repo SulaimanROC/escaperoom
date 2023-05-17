@@ -1,0 +1,95 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: monospace;
+    user-select: none;
+}
+
+.text-title {
+    height: 33%;
+    font-size: 50px;
+    padding-left: 20px;
+    padding-top: 10px;
+    color: white;
+    position: relative;
+    float: left;
+}
+
+.ok-button {
+    height: 45px;
+    margin-top: 20px;
+    right: 50px;
+    position: fixed;
+    background-color: black;
+    color: white;
+    font-size: 30px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    line-height: 45px;
+    border: solid darkgray 1px;
+    border-radius: 10px;
+    text-align: center;
+    width: 80px;
+}
+
+.ok-button:hover {
+    background-color: rgb(50, 50, 50);
+}
+
+.text-content {
+    clear: left;
+    position: relative;
+    height: 67%;
+    font-size: 30px;
+    padding-left: 40px;
+    padding-right: 40px;
+    color: white;
+    
+    overflow: scroll;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.text-content::-webkit-scrollbar { 
+    display: none;  /* verwijderd de scrollbar in Safari and Chrome  */
+}
+
+.canvas-overlay {
+    display: none;
+    bottom: 0%;
+    left: 50%;
+    transform: translateX(-50%); /* gewoon de canvas gecentreerd */
+    position: absolute;
+    z-index: 2;
+    top: 65%;
+    width: 100%;
+    max-height: 35%;
+    height: 35%;
+    background-color: rgba(0, 0, 0, 0.85);
+    overflow: hidden;
+}
+
+body {
+    background-color: rgb(109, 1, 1);
+}
+
+
+.main-canvas {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* gewoon de canvas gecentreerd */
+    position: absolute;
+    image-rendering: optimizeSpeed;
+    image-rendering: crisp-edges;
+    image-rendering: -moz-crisp-edges;
+    image-rendering: -o-crisp-edges;
+    image-rendering: -webkit-optimize-contrast;
+    -ms-interpolation-mode: nearest-neighbor;
+    image-rendering: -moz-crisp-edges;
+}
+
+
+
+img {
+    display: none;
+}
